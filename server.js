@@ -12,14 +12,6 @@ async function init(){
     admin.connect();
     console.log('Admin Connected');
     console.log('Creating topic [send email]');
-    // await admin.createTopics({
-    //     topics: [
-    //         {
-    //             topic: "send email",
-    //             numPartitions: 2,
-    //         }
-    //     ]
-    // });
     await admin.createTopics({
         topics: [
             {
